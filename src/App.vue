@@ -2,13 +2,17 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/cartelera">Cartelera</router-link>
     </nav>
     <router-view/>
   </div>
 </template>
 
 <style>
+body{
+  background: black;
+  background-image: url("assets/images/neocity.jpg");
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
