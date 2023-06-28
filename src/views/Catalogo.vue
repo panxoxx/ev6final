@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h1>Cartelera</h1>
-    <button @click="obtenerJuegos">Obtener Juegos</button>
+    <button @click="obtenerJuegos"  class="btn btn-warning">Obtener Juegos</button>
     <div class="container">
       <div class="row">
         <div
@@ -23,7 +22,7 @@
                 suscipit nihil asperiores enim. Reprehenderit nam soluta esse
                 nesciunt accusantium aliquam dolorum, doloribus quidem ut?
               </p>
-              <a  class="btn btn-primary" @click="redirect(juego.id)">Ver mas</a>
+              <a  class="btn btn-primary" @click="redirect(juego.id)" >Ver mas</a>
             </div>
           </div>
         </div>
@@ -62,7 +61,7 @@ export default {
     },
 
     redirect(id){
-      this.$router.push("/cartelera/"+ id)
+      this.$router.push("/Catalogo/"+ id)
     }
 
       
@@ -79,4 +78,10 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  color:black;
+}
+
+
+
 </style>

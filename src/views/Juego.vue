@@ -1,18 +1,15 @@
 <template >
   <div class="container">
-    <h1>
-      {{id}}
-    </h1>
     <table class="table table-striped">
       <tbody>
         <tr>   
-            <!-- <th class="img-fluid"><img :src="personaje.background_image"  height="400" style="object-fit:cover"/></th> -->
+            <th class="img-fluid"><img :src="personaje.background_image"  height="400" style="object-fit:cover"/></th>
           </tr>
           <tr>   
             <th class="label">NOMBRE</th>
           </tr>
           <tr>
-            <!-- <td class="info">{{personaje.name}}</td> -->
+            <td class="info">{{personaje.name}}</td>
           </tr>
 
            <tr>   
@@ -32,6 +29,7 @@
        
       </tbody>
     </table>
+    <router-link :to="{path:`/Catalogo`}">Volver</router-link>
   </div>
 </template>
 
@@ -75,7 +73,7 @@ export default {
   // filters: {},
   // -- Lifecycle Methods
   created(){
-    this.obtenerJuego()
+    this.Juego()
   }
   // -- End Lifecycle Methods
 };
